@@ -1,34 +1,224 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // Example genealogical data. Expand or load dynamically as needed.
+  // Genealogical data for Порошин Николай Михайлович (2006)
+  // Aggregated branches: Titovy, Atkiny, and Порошины
   const data = {
-    name: 'Иванов Иван Петрович',
-    years: '1920–1980',
-    profession: 'Учитель',
-    residence: 'Москва',
+    name: 'Порошин Николай Михайлович (2006)',
     children: [
       {
-        name: 'Иванова Анна Ивановна',
-        years: '1945–2005',
-        profession: 'Врач',
-        residence: 'Санкт-Петербург'
+        name: 'Титова Елизавета Александровна (урожд. Савельева)',
+        years: '25.10.1898–13.04.1972',
+        profession: '',
+        residence: '',
+        children: [
+          {
+            name: 'Титов Пётр Михайлович',
+            years: '1928–',
+            profession: '',
+            residence: '',
+            children: []
+          },
+          {
+            name: 'Титов Степан Михайлович',
+            years: '1930–',
+            profession: '',
+            residence: '',
+            children: []
+          },
+          {
+            name: 'Титова Нина Михайловна',
+            years: '20.06.1933–',
+            profession: '',
+            residence: '',
+            children: []
+          },
+          {
+            name: 'Титов Виктор Михайлович',
+            years: '25.04.1942–07.03.1991',
+            profession: 'Военнослужащий (Тихоокеанский флот)',
+            residence: '',
+            children: [
+              {
+                name: 'Титов Евгений Викторович',
+                years: '21.10.1973–15.08.1991',
+                profession: '',
+                residence: ''
+              }
+            ]
+          },
+          {
+            name: 'Титов Александр (Леонид) Михайлович',
+            years: '20.06.1933–01.10.2002',
+            profession: '',
+            residence: 'Матвеевка (выписано как место рождения); позднее Новосибирск',
+            children: [
+              {
+                name: 'Порошина Елена Александровна',
+                years: '–',
+                profession: '',
+                residence: 'Новосибирск',
+                children: [
+                  {
+                    name: 'Порошин Максим Михайлович',
+                    years: '–',
+                    profession: '',
+                    residence: 'Новосибирск',
+                    children: []
+                  },
+                  {
+                    name: 'Порошин Евгений Михайлович',
+                    years: '–',
+                    profession: '',
+                    residence: 'Новосибирск',
+                    children: []
+                  },
+                  {
+                    name: 'Порошин Николай Михайлович',
+                    years: '2006–',
+                    profession: '',
+                    residence: 'Новосибирск',
+                    children: []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
-        name: 'Иванов Сергей Иванович',
-        years: '1950–2010',
-        profession: 'Инженер',
+        name: 'Аткин Иван Осипович',
+        years: '13.06.1908–1954 (или 1952)',
+        profession: 'Шофёр, рядовой РККА (ВОВ; фронтовой водитель «Катюш»)',
+        residence: 'с. Пичпанда, Мордовия; позднее Новосибирск',
+        children: [
+          {
+            name: 'Аткин Фёдор Иванович',
+            years: '02.09.1928–2012',
+            profession: '',
+            residence: 'с. Пичпанда, Мордовия',
+            children: []
+          },
+          {
+            name: 'Горленко Екатерина Ивановна (урожд. Аткина)',
+            years: '21.08.1930–14.09.2000',
+            profession: '',
+            residence: 'Матвеевка (Новосибирск)',
+            children: []
+          },
+          {
+            name: 'Аткин Виталий (Виктор) Иванович',
+            years: '1932–1933',
+            profession: '',
+            residence: '',
+            children: []
+          },
+          {
+            name: 'Аткина Елизавета Ивановна',
+            years: '1932–1933',
+            profession: '',
+            residence: '',
+            children: []
+          },
+          {
+            name: 'Ведерникова Мария Ивановна (урожд. Аткина)',
+            years: '02.03.1934–14.02.2010',
+            profession: '',
+            residence: '',
+            children: []
+          },
+          {
+            name: 'Титова Ольга Ивановна (урожд. Аткина)',
+            years: '05.08.1937–',
+            profession: 'Сельхозработница (ферма, поле)',
+            residence: 'рожд. с. Пичпанда (Мордовия); проживала Новосибирск, пос. Матвеевка',
+            children: [
+              {
+                name: 'Порошина Елена Александровна',
+                years: '–',
+                profession: '',
+                residence: 'Новосибирск',
+                children: [
+                  {
+                    name: 'Порошин Максим Михайлович',
+                    years: '–',
+                    profession: '',
+                    residence: 'Новосибирск',
+                    children: []
+                  },
+                  {
+                    name: 'Порошин Евгений Михайлович',
+                    years: '–',
+                    profession: '',
+                    residence: 'Новосибирск',
+                    children: []
+                  },
+                  {
+                    name: 'Порошин Николай Михайлович',
+                    years: '2006–',
+                    profession: '',
+                    residence: 'Новосибирск',
+                    children: []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            name: 'Аткин Михаил Иванович',
+            years: '1948–1985',
+            profession: '',
+            residence: '',
+            children: []
+          },
+          {
+            name: 'Волхонская Людмила Ивановна (урожд. Аткина)',
+            years: '1952–',
+            profession: '',
+            residence: 'большую часть жизни — г. Кемерово; позднее Краснодар',
+            children: [
+              {
+                name: 'Волхонский Сергей',
+                years: '1982–',
+                profession: '',
+                residence: '',
+                children: []
+              },
+              {
+                name: 'Волхонский Павел',
+                years: '1984–',
+                profession: '',
+                residence: '',
+                children: []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: 'Порошин Михаил Юрьевич',
+        years: '–',
+        profession: '',
         residence: 'Новосибирск',
         children: [
           {
-            name: 'Иванова Мария Сергеевна',
-            years: '1975–',
-            profession: 'Программист',
-            residence: 'Екатеринбург'
+            name: 'Порошин Максим Михайлович',
+            years: '–',
+            profession: '',
+            residence: 'Новосибирск',
+            children: []
           },
           {
-            name: 'Иванов Алексей Сергеевич',
-            years: '1980–',
-            profession: 'Предприниматель',
-            residence: 'Москва'
+            name: 'Порошин Евгений Михайлович',
+            years: '–',
+            profession: '',
+            residence: 'Новосибирск',
+            children: []
+          },
+          {
+            name: 'Порошин Николай Михайлович',
+            years: '2006–',
+            profession: '',
+            residence: 'Новосибирск',
+            children: []
           }
         ]
       }
@@ -37,13 +227,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const tooltip = d3.select('#tooltip');
   const container = document.getElementById('tree-container');
-  const width = container.clientWidth;
-  const height = container.clientHeight;
+  const width = container.clientWidth || window.innerWidth;
+  const height = container.clientHeight || window.innerHeight;
 
   const svg = d3.select('#tree-container')
     .append('svg')
-    .attr('width', width)
-    .attr('height', height)
+    .attr('viewBox', [0, 0, width, height])
+    .attr('width', '100%')
+    .attr('height', '100%')
     .append('g')
     .attr('transform', 'translate(40,40)');
 
