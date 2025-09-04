@@ -1,50 +1,26 @@
 document.addEventListener('DOMContentLoaded', () => {
   // Genealogical data for Порошин Николай Михайлович (2006)
-  // Aggregated branches: Titovy, Atkiny, and Порошины
+  // Нормализованная структура: от корня идут только две ветви — к отцу и матери
   const data = {
     name: 'Порошин Николай Михайлович (2006)',
     children: [
+      // Отец
       {
-        name: 'Титова Елизавета Александровна (урожд. Савельева)',
-        years: '25.10.1898–13.04.1972',
+        name: 'Порошин Михаил Юрьевич',
+        years: '–',
         profession: '',
-        residence: '',
+        residence: 'Новосибирск',
+        // Предки по отцовской линии пока не указаны
+        children: []
+      },
+      // Мать
+      {
+        name: 'Порошина Елена Александровна',
+        years: '–',
+        profession: '',
+        residence: 'Новосибирск',
         children: [
-          {
-            name: 'Титов Пётр Михайлович',
-            years: '1928–',
-            profession: '',
-            residence: '',
-            children: []
-          },
-          {
-            name: 'Титов Степан Михайлович',
-            years: '1930–',
-            profession: '',
-            residence: '',
-            children: []
-          },
-          {
-            name: 'Титова Нина Михайловна',
-            years: '20.06.1933–',
-            profession: '',
-            residence: '',
-            children: []
-          },
-          {
-            name: 'Титов Виктор Михайлович',
-            years: '25.04.1942–07.03.1991',
-            profession: 'Военнослужащий (Тихоокеанский флот)',
-            residence: '',
-            children: [
-              {
-                name: 'Титов Евгений Викторович',
-                years: '21.10.1973–15.08.1991',
-                profession: '',
-                residence: ''
-              }
-            ]
-          },
+          // Дедушка по маме
           {
             name: 'Титов Александр (Леонид) Михайлович',
             years: '20.06.1933–01.10.2002',
@@ -52,79 +28,15 @@ document.addEventListener('DOMContentLoaded', () => {
             residence: 'Матвеевка (выписано как место рождения); позднее Новосибирск',
             children: [
               {
-                name: 'Порошина Елена Александровна',
-                years: '–',
+                name: 'Титова Елизавета Александровна (урожд. Савельева)',
+                years: '25.10.1898–13.04.1972',
                 profession: '',
-                residence: 'Новосибирск',
-                children: [
-                  {
-                    name: 'Порошин Максим Михайлович',
-                    years: '–',
-                    profession: '',
-                    residence: 'Новосибирск',
-                    children: []
-                  },
-                  {
-                    name: 'Порошин Евгений Михайлович',
-                    years: '–',
-                    profession: '',
-                    residence: 'Новосибирск',
-                    children: []
-                  },
-                  {
-                    name: 'Порошин Николай Михайлович',
-                    years: '2006–',
-                    profession: '',
-                    residence: 'Новосибирск',
-                    children: []
-                  }
-                ]
+                residence: '',
+                children: []
               }
             ]
-          }
-        ]
-      },
-      {
-        name: 'Аткин Иван Осипович',
-        years: '13.06.1908–1954 (или 1952)',
-        profession: 'Шофёр, рядовой РККА (ВОВ; фронтовой водитель «Катюш»)',
-        residence: 'с. Пичпанда, Мордовия; позднее Новосибирск',
-        children: [
-          {
-            name: 'Аткин Фёдор Иванович',
-            years: '02.09.1928–2012',
-            profession: '',
-            residence: 'с. Пичпанда, Мордовия',
-            children: []
           },
-          {
-            name: 'Горленко Екатерина Ивановна (урожд. Аткина)',
-            years: '21.08.1930–14.09.2000',
-            profession: '',
-            residence: 'Матвеевка (Новосибирск)',
-            children: []
-          },
-          {
-            name: 'Аткин Виталий (Виктор) Иванович',
-            years: '1932–1933',
-            profession: '',
-            residence: '',
-            children: []
-          },
-          {
-            name: 'Аткина Елизавета Ивановна',
-            years: '1932–1933',
-            profession: '',
-            residence: '',
-            children: []
-          },
-          {
-            name: 'Ведерникова Мария Ивановна (урожд. Аткина)',
-            years: '02.03.1934–14.02.2010',
-            profession: '',
-            residence: '',
-            children: []
-          },
+          // Бабушка по маме
           {
             name: 'Титова Ольга Ивановна (урожд. Аткина)',
             years: '05.08.1937–',
@@ -132,93 +44,13 @@ document.addEventListener('DOMContentLoaded', () => {
             residence: 'рожд. с. Пичпанда (Мордовия); проживала Новосибирск, пос. Матвеевка',
             children: [
               {
-                name: 'Порошина Елена Александровна',
-                years: '–',
-                profession: '',
-                residence: 'Новосибирск',
-                children: [
-                  {
-                    name: 'Порошин Максим Михайлович',
-                    years: '–',
-                    profession: '',
-                    residence: 'Новосибирск',
-                    children: []
-                  },
-                  {
-                    name: 'Порошин Евгений Михайлович',
-                    years: '–',
-                    profession: '',
-                    residence: 'Новосибирск',
-                    children: []
-                  },
-                  {
-                    name: 'Порошин Николай Михайлович',
-                    years: '2006–',
-                    profession: '',
-                    residence: 'Новосибирск',
-                    children: []
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            name: 'Аткин Михаил Иванович',
-            years: '1948–1985',
-            profession: '',
-            residence: '',
-            children: []
-          },
-          {
-            name: 'Волхонская Людмила Ивановна (урожд. Аткина)',
-            years: '1952–',
-            profession: '',
-            residence: 'большую часть жизни — г. Кемерово; позднее Краснодар',
-            children: [
-              {
-                name: 'Волхонский Сергей',
-                years: '1982–',
-                profession: '',
-                residence: '',
-                children: []
-              },
-              {
-                name: 'Волхонский Павел',
-                years: '1984–',
-                profession: '',
-                residence: '',
+                name: 'Аткин Иван Осипович',
+                years: '13.06.1908–1954 (или 1952)',
+                profession: 'Шофёр, рядовой РККА (ВОВ; фронтовой водитель «Катюш»)',
+                residence: 'с. Пичпанда, Мордовия; позднее Новосибирск',
                 children: []
               }
             ]
-          }
-        ]
-      },
-      {
-        name: 'Порошин Михаил Юрьевич',
-        years: '–',
-        profession: '',
-        residence: 'Новосибирск',
-        children: [
-          {
-            name: 'Порошин Максим Михайлович',
-            years: '–',
-            profession: '',
-            residence: 'Новосибирск',
-            children: []
-          },
-          {
-            name: 'Порошин Евгений Михайлович',
-            years: '–',
-            profession: '',
-            residence: 'Новосибирск',
-            children: []
-          },
-          {
-            name: 'Порошин Николай Михайлович',
-            years: '2006–',
-            profession: '',
-            residence: 'Новосибирск',
-            children: []
           }
         ]
       }
