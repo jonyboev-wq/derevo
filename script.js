@@ -227,13 +227,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const tooltip = d3.select('#tooltip');
   const container = document.getElementById('tree-container');
-  const width = container.clientWidth;
-  const height = container.clientHeight;
+  const width = container.clientWidth || window.innerWidth;
+  const height = container.clientHeight || window.innerHeight;
 
   const svg = d3.select('#tree-container')
     .append('svg')
-    .attr('width', width)
-    .attr('height', height)
+    .attr('viewBox', [0, 0, width, height])
+    .attr('width', '100%')
+    .attr('height', '100%')
     .append('g')
     .attr('transform', 'translate(40,40)');
 
